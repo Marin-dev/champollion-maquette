@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Contact — Reproductions d'art Champollion</title>
+  <meta name="description" content="Contactez Champollion : présentation des œuvres in situ, étude de projet, formats et éditions limitées pour architectes, hôteliers et entreprises.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-contact">
+
+  <header class="nav is-solid" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Champollion</a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="index.html#procede">Fabrication</a>
+        <a href="index.html#comparer">Comparer</a>
+        <a href="index.html#collection">Collection</a>
+        <a href="index.html#espaces">Espaces</a>
+        <a href="contact.html" class="nav__cta" aria-current="page">Nous contacter</a>
+      </nav>
+      <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="cpage-hero">
+      <p class="eyebrow">Contact</p>
+      <h1 class="h2">Parlons de votre lieu,<br><em>de sa lumière, de vos murs.</em></h1>
+      <p class="lead">Architectes, décorateurs, hôteliers, entreprises, artistes : décrivez-nous votre projet. Nous revenons vers vous pour organiser une présentation des œuvres et étudier formats, séries et accrochage.</p>
+    </section>
+
+    <section class="cpage">
+      <div class="cpage__grid">
+
+        <!-- Formulaire -->
+        <form class="cform" id="contactForm" novalidate>
+          <fieldset class="cform__group">
+            <legend>Vous êtes</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="profil" value="Architecte / décorateur" checked><span>Architecte · décorateur</span></label>
+              <label class="chip"><input type="radio" name="profil" value="Hôtellerie"><span>Hôtellerie</span></label>
+              <label class="chip"><input type="radio" name="profil" value="Entreprise"><span>Entreprise</span></label>
+              <label class="chip"><input type="radio" name="profil" value="Artiste / photographe"><span>Artiste · photographe</span></label>
+              <label class="chip"><input type="radio" name="profil" value="Particulier"><span>Particulier</span></label>
+            </div>
+          </fieldset>
+
+          <div class="cform__field cform__field--full">
+            <label for="objet">Votre demande</label>
+            <select id="objet" name="objet">
+              <option>Présentation des œuvres in situ</option>
+              <option>Projet d'aménagement / devis</option>
+              <option>Reproduction d'une œuvre (artiste)</option>
+              <option>Tirage d'art photographique</option>
+              <option>Communication d'entreprise / événement</option>
+              <option>Autre demande</option>
+            </select>
+          </div>
+
+          <div class="cform__row">
+            <div class="cform__field">
+              <label for="nom">Nom et prénom <span aria-hidden="true">*</span></label>
+              <input id="nom" name="nom" type="text" autocomplete="name" required>
+              <span class="cform__err">Indiquez votre nom.</span>
+            </div>
+            <div class="cform__field">
+              <label for="societe">Société / établissement</label>
+              <input id="societe" name="societe" type="text" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="cform__row">
+            <div class="cform__field">
+              <label for="email">E-mail <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <span class="cform__err">Indiquez une adresse e-mail valide.</span>
+            </div>
+            <div class="cform__field">
+              <label for="tel">Téléphone</label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="cform__field cform__field--full">
+            <label for="lieu">Lieu du projet</label>
+            <input id="lieu" name="lieu" type="text" placeholder="Ville, type d'espace (hall, suites, salle de conseil…)">
+          </div>
+
+          <div class="cform__field cform__field--full">
+            <label for="message">Votre message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required placeholder="Nombre d'œuvres, formats envisagés, ambiance, calendrier…"></textarea>
+            <span class="cform__err">Dites-nous en quelques mots ce que vous recherchez.</span>
+          </div>
+
+          <label class="cform__consent">
+            <input type="checkbox" name="consent" required>
+            <span>J'accepte que mes informations soient utilisées pour répondre à ma demande. Elles ne sont ni cédées ni utilisées à d'autres fins.</span>
+          </label>
+          <span class="cform__err cform__err--consent">Merci de cocher cette case pour envoyer votre demande.</span>
+
+          <div class="cform__submit">
+            <button type="submit" class="btn btn--dark">Envoyer ma demande</button>
+            <p class="cform__hint">* Champs obligatoires</p>
+          </div>
+
+          <div class="cform__done" id="formDone" hidden>
+            <p class="eyebrow">Merci</p>
+            <h2>Votre demande est prête à partir.</h2>
+            <p>Votre messagerie s'est ouverte avec le message pré-rempli. Si rien ne s'est passé, écrivez-nous directement à <a href="mailto:contact@champollion.art">contact@champollion.art</a>.</p>
+          </div>
+        </form>
+
+        <!-- Coordonnées -->
+        <aside class="cside">
+          <div class="cside__card">
+            <p class="contact__name">David Genevier</p>
+            <p class="contact__role">Fondateur du procédé Champollion</p>
+            <a class="contact__line" href="mailto:contact@champollion.art">contact@champollion.art</a>
+            <a class="contact__line" href="tel:+33614694677">+33 6 14 69 46 77</a>
+            <address>
+              Actimage<br>3 rue des Entrepreneurs, ZI la Touche<br>44290 Guémené-Penfao, France
+              <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query=3+rue+des+Entrepreneurs+44290+Gu%C3%A9men%C3%A9-Penfao" target="_blank" rel="noopener">Voir sur la carte</a>
+            </address>
+          </div>
+
+          <div class="cside__steps">
+            <p class="eyebrow">Comment ça se passe</p>
+            <ol>
+              <li><span class="step__n">01</span><div><h3>Premier échange</h3><p>Votre lieu, sa lumière, le nombre d'œuvres, les formats et le calendrier.</p></div></li>
+              <li><span class="step__n">02</span><div><h3>Présentation in situ</h3><p>Nous venons avec des reproductions Champollion : le rendu s'apprécie sur place, sous votre éclairage.</p></div></li>
+              <li><span class="step__n">03</span><div><h3>Sélection &amp; édition</h3><p>Choix des œuvres, des séries et de l'encadrement, en accord avec les artistes.</p></div></li>
+              <li><span class="step__n">04</span><div><h3>Livraison</h3><p>Chaque œuvre est numérotée, encadrée et livrée prête à accrocher.</p></div></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="nav__logo">Champollion</span>
+      <span>Un procédé breveté Actimage · Reproductions d'art en éditions limitées</span>
+      <span>© 2026 Champollion</span>
+    </div>
+  </footer>
+
+  <div class="mockup-badge">Maquette · Proposition de refonte · Site non officiel</div>
+
+  <script src="contact.js"></script>
+</body>
+</html>
