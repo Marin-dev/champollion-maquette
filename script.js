@@ -372,7 +372,7 @@ tabs.forEach((tab, i) => {
 });
 
 // ---------- Apparitions au défilement ----------
-document.querySelectorAll('.section-head, .work, .process__steps li, .compare__stage, .proof__item, .scenes, .contact__card, .quote blockquote')
+document.querySelectorAll('.section-head, .work, .process__steps li, .compare__frame, .proof__item, .scenes, .contact__card, .quote blockquote')
   .forEach(el => el.classList.add('reveal'));
 const io = new IntersectionObserver(entries => {
   entries.forEach(en => {

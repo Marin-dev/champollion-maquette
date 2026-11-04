@@ -231,19 +231,53 @@ em { font-style: italic; }
 
 /* ---------- Compare ---------- */
 .compare { padding: 40px 0 clamp(100px, 16vh, 180px); }
-.compare__stage {
+/* Caisse américaine, d'après les reproductions photographiées plus bas :
+   profilé fin en or brossé un peu terne, l'œuvre flotte dans un retrait noir */
+.compare__frame {
+  --fw: clamp(7px, 1vw, 13px);
   position: relative;
   width: min(1100px, calc(100% - 2 * var(--pad)));
+  margin: 0 auto;
+  padding: clamp(6px, .9vw, 12px);
+  border: var(--fw) solid transparent;
+  background:
+    var(--felt) 0 0 / 160px,
+    repeating-linear-gradient(90deg, rgba(255,240,200,.07) 0 1px, rgba(0,0,0,.05) 1px 2px, transparent 2px 5px),
+    linear-gradient(160deg, #c2a666 0%, #a48a4e 35%, #b89d5e 55%, #8e7642 100%);
+  background-origin: border-box;
+  background-blend-mode: soft-light, normal, normal;
+  box-shadow: 0 30px 60px -34px rgba(20,19,18,.5), 0 3px 6px -2px rgba(20,19,18,.3);
+}
+.compare__frame::before,
+.compare__frame::after { content: ""; position: absolute; inset: 0; pointer-events: none; }
+/* le retrait : fond noir, paroi intérieure du profilé à peine éclairée en bas */
+.compare__frame::before {
+  background: #0c0b0a;
+  box-shadow:
+    0 0 0 1px rgba(60,46,20,.6),
+    inset 0 -3px 5px -2px rgba(176,146,84,.35),
+    inset 0 4px 8px rgba(0,0,0,.7);
+}
+/* arêtes du profilé : lumière en haut, ombre en bas */
+.compare__frame::after {
+  inset: calc(-1 * var(--fw));
+  box-shadow:
+    inset 0 1px 0 rgba(255,244,214,.35),
+    inset 0 -1px 0 rgba(40,30,12,.45),
+    inset 0 0 0 1px rgba(60,46,20,.35);
+}
+.compare__stage {
+  position: relative;
+  width: 100%;
   aspect-ratio: 1600 / 1258;
   max-height: 86vh;
-  margin: 0 auto;
   overflow: hidden;
   user-select: none;
   -webkit-user-select: none;
   touch-action: pan-y;
   cursor: grab;
   background: #222;
-  box-shadow: 0 40px 80px -40px rgba(20,19,18,.45);
+  box-shadow: 0 2px 6px rgba(0,0,0,.5);
   --x: 50%; --y: 40%; /* position de la lumière, partagée par les deux côtés */
 }
 .compare__layer { position: absolute; inset: 0; }
