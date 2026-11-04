@@ -244,6 +244,7 @@ em { font-style: italic; }
   cursor: grab;
   background: #222;
   box-shadow: 0 40px 80px -40px rgba(20,19,18,.45);
+  --x: 50%; --y: 40%; /* position de la lumière, partagée par les deux côtés */
 }
 .compare__layer { position: absolute; inset: 0; }
 .compare__layer img { width: 100%; height: 100%; object-fit: cover; }
@@ -257,6 +258,20 @@ em { font-style: italic; }
   pointer-events: none;
 }
 .compare__layer--gloss { clip-path: inset(0 50% 0 0); }
+/* La lumière éclaire l'œuvre des deux côtés : une zone chaude et diffuse,
+   sans point blanc. Seul le tirage brillant y ajoute un reflet (.gloss__spot) */
+.light__pool {
+  position: absolute; inset: 0; pointer-events: none;
+  /* le faisceau éclaircit les couleurs, sans jamais monter jusqu'au blanc */
+  background: radial-gradient(circle at var(--x) var(--y), rgba(255,224,182,.55) 0%, rgba(255,224,182,.28) 18%, rgba(255,224,182,0) 42%);
+  mix-blend-mode: screen;
+}
+/* hors du faisceau, l'œuvre est dans la pénombre */
+.compare__layer::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(0,0,0,0) 18%, rgba(0,0,0,.55) 70%);
+  mix-blend-mode: multiply;
+}
 .compare__layer--gloss img { filter: contrast(.92) saturate(.92); }
 .gloss__window {
   position: absolute; inset: 0;
@@ -267,7 +282,6 @@ em { font-style: italic; }
   mix-blend-mode: screen;
 }
 .gloss__spot {
-  --x: 30%; --y: 30%;
   position: absolute; inset: 0;
   background:
     radial-gradient(circle at var(--x) var(--y), rgba(255,255,255,.95) 0%, rgba(255,255,255,.55) 5%, rgba(255,255,255,.12) 16%, transparent 34%);
@@ -447,7 +461,7 @@ sup { font-size: .6em; vertical-align: super; line-height: 0; }
   width: var(--w);
   aspect-ratio: var(--art);
   box-shadow:
-    0 0 0 max(2px, .25vw) #161412,
+    0 0 0 var(--frame, max(2px, .25vw)) var(--frame-color, #161412),
     0 1px 1px rgba(0,0,0,.25),
     0 1.2vw 2.4vw -0.6vw rgba(0,0,0,.55);
 }
@@ -465,10 +479,6 @@ sup { font-size: .6em; vertical-align: super; line-height: 0; }
 }
 .scene.is-active .scene__inner { animation: sceneIn 9s var(--ease) both; }
 @keyframes sceneIn { from { transform: translate(-50%, -50%) scale(1.05); } to { transform: translate(-50%, -50%) scale(1); } }
-.scenes__credit {
-  width: calc(100% - 2 * var(--pad)); max-width: 1400px;
-  margin: 14px auto 0; font-size: 12px; color: var(--ink-soft); opacity: .7;
-}
 
 .spaces__info {
   max-width: 1400px; margin: 48px auto 0; padding: 0 var(--pad);

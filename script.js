@@ -174,7 +174,6 @@ scrollJobs.push(() => {
 const stage = document.getElementById('compare');
 const gloss = document.getElementById('compareGloss');
 const handle = document.getElementById('compareHandle');
-const glossSpot = document.getElementById('glossSpot');
 
 const renderSplit = v => {
   const shown = clamp(v, 0, 100);
@@ -261,9 +260,9 @@ handle.addEventListener('keydown', e => {
   e.preventDefault();
 });
 
-// Lumière du tirage brillant : deux ressorts indépendants (X et Y), elle suit la souris avec inertie
-const lightX = new Spring(30, { response: 0.45 }, v => glossSpot.style.setProperty('--x', v + '%'));
-const lightY = new Spring(30, { response: 0.45 }, v => glossSpot.style.setProperty('--y', v + '%'));
+// Lumière : deux ressorts indépendants (X et Y), elle suit la souris avec inertie et éclaire les deux côtés
+const lightX = new Spring(30, { response: 0.45 }, v => stage.style.setProperty('--x', v + '%'));
+const lightY = new Spring(30, { response: 0.45 }, v => stage.style.setProperty('--y', v + '%'));
 let hovering = false;
 function moveLight(e) {
   const r = stage.getBoundingClientRect();
@@ -279,8 +278,8 @@ let driftT = 0;
 const drift = () => {
   if (!hovering) {
     driftT += 0.006;
-    lightX.jump(25 + Math.sin(driftT) * 18);
-    lightY.jump(32 + Math.cos(driftT * 0.8) * 16);
+    lightX.jump(50 + Math.sin(driftT) * 30);
+    lightY.jump(40 + Math.cos(driftT * 0.8) * 18);
   }
   driftRaf = requestAnimationFrame(drift);
 };
