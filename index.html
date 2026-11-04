@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Champollion — L'œuvre, sans le reflet</title>
-  <meta name="description" content="Champollion : reproductions d'art sur feutre, d'une matité absolue. Éditions limitées pour hôtels, architectes et lieux d'exception.">
+  <title>Champollion · Reproductions d'art sans reflet</title>
+  <meta name="description" content="Champollion : reproductions d'art imprimées sur feutre mat, sans reflet. Éditions limitées pour les hôtels, les architectes et les entreprises.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -37,13 +37,13 @@
 
         <div class="hero__head hero__head--intro" id="heroIntro">
           <p class="eyebrow">Champollion<sup>®</sup> · Procédé breveté · Éditions limitées</p>
-          <h1 class="hero__title">L'œuvre. <em>Sans le reflet.</em></h1>
+          <h1 class="hero__title">Reproductions d'art <em>sans reflet.</em></h1>
         </div>
 
         <div class="hero__head hero__head--reveal" id="heroReveal">
-          <p class="eyebrow">Regardez mieux</p>
-          <h2 class="hero__title">Ceci n'est pas <em>l'original.</em></h2>
-          <p class="hero__lead">C'est une reproduction Champollion<sup>®</sup> sur feutre. D'une matité absolue, sans vitre ni vernis — à quelques pas, on ne voit plus que le tableau.</p>
+          <p class="eyebrow">Regardez de près</p>
+          <h2 class="hero__title">Ce tableau est <em>une reproduction.</em></h2>
+          <p class="hero__lead">Elle est imprimée sur feutre, sans vitre ni vernis. Sa surface est mate et ne renvoie pas la lumière.</p>
           <div class="hero__actions">
             <a href="#comparer" class="btn btn--light">Voir la différence</a>
             <a href="#collection" class="link-arrow link-arrow--light">Découvrir la collection</a>
@@ -52,7 +52,7 @@
 
         <figure class="hero__art" id="heroArt">
           <div class="hero__canvas">
-            <img src="https://www.champollion.art/wp-content/uploads/2023/07/eberle_2022_barber_51x120_g.jpg" alt="Christoph Eberle, Barber, 2022 — reproduction Champollion sur feutre">
+            <img src="https://www.champollion.art/wp-content/uploads/2023/07/eberle_2022_barber_51x120_g.jpg" alt="Christoph Eberle, Barber, 2022, reproduction Champollion sur feutre">
             <div class="felt"></div>
           </div>
           <figcaption class="hero__label" id="heroLabel">
@@ -68,74 +68,93 @@
 
     <!-- MANIFESTE -->
     <section class="manifesto" id="manifeste">
-      <p class="manifesto__text reveal-words">Une photographie sous verre renvoie la fenêtre, la lampe, le visiteur. Le feutre Champollion absorbe la lumière au lieu de la réfléchir. Il ne reste que l'image — sa matière, sa profondeur.</p>
+      <p class="manifesto__text reveal-words">Une photo sous verre reflète la fenêtre, la lampe et la personne qui la regarde. Le feutre Champollion absorbe la lumière au lieu de la renvoyer. On ne voit que l'image.</p>
     </section>
 
     <!-- COMPARATEUR -->
     <section class="compare" id="comparer">
       <div class="section-head">
-        <p class="eyebrow">Avant · Après</p>
-        <h2 class="h2">Promenez la lumière.<br><em>Regardez ce qui disparaît.</em></h2>
-        <p class="lead">Glissez le curseur pour comparer un tirage brillant classique et le procédé Champollion. Survolez l'œuvre : la source lumineuse vous suit.</p>
+        <p class="eyebrow">Comparer</p>
+        <h2 class="h2">Le même tableau,<br><em>deux tirages.</em></h2>
+        <p class="lead">À gauche, un tirage brillant classique. À droite, une reproduction Champollion. Faites glisser l'image pour comparer. Avec une souris, la lumière suit le curseur.</p>
       </div>
 
       <div class="compare__stage" id="compare">
         <div class="compare__layer compare__layer--matte">
-          <img src="https://www.champollion.art/wp-content/uploads/2023/07/Jacques-Bodin-Fruits-XVII-oil-on-canvas-2016-100x100-cm.jpg" alt="Jacques Bodin, Fruits — rendu mat Champollion">
+          <img src="image/van-gogh-iris.jpg" alt="Vincent van Gogh, Les Iris, 1889, rendu mat Champollion" draggable="false">
           <div class="felt"></div>
         </div>
         <div class="compare__layer compare__layer--gloss" id="compareGloss">
-          <img src="https://www.champollion.art/wp-content/uploads/2023/07/Jacques-Bodin-Fruits-XVII-oil-on-canvas-2016-100x100-cm.jpg" alt="" aria-hidden="true">
+          <img src="image/van-gogh-iris.jpg" alt="" aria-hidden="true" draggable="false">
           <div class="gloss__window"></div>
           <div class="gloss__spot" id="glossSpot"></div>
           <div class="gloss__sheen"></div>
         </div>
         <span class="compare__tag compare__tag--left">Tirage brillant</span>
         <span class="compare__tag compare__tag--right">Champollion</span>
-        <div class="compare__handle" id="compareHandle" role="slider" tabindex="0" aria-label="Position du comparateur" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <div class="compare__handle" id="compareHandle" role="slider" tabindex="0" aria-label="Part de tirage brillant" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
           <span class="compare__knob"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
         </div>
       </div>
 
       <div class="compare__facts">
-        <div><span class="fact__k">0 %</span><span class="fact__v">de reflet spéculaire, quel que soit l'angle</span></div>
-        <div><span class="fact__k">Mat</span><span class="fact__v">comme une huile ou une gouache, sans vitre ni vernis</span></div>
+        <div><span class="fact__k">0 %</span><span class="fact__v">de reflet, quel que soit l'angle</span></div>
+        <div><span class="fact__k">Mat</span><span class="fact__v">comme une peinture à l'huile, sans vitre ni vernis</span></div>
         <div><span class="fact__k">1/27</span><span class="fact__v">tirages numérotés, en accord avec l'artiste</span></div>
       </div>
-      <p class="note">Simulation pédagogique. Le rendu réel s'apprécie in situ — nous organisons des présentations sur demande.</p>
+      <p class="note">Simulation à l'écran. Pour voir le rendu réel, nous présentons les œuvres sur demande.</p>
+    </section>
+
+    <!-- PREUVE : photos réelles de reproductions encadrées -->
+    <section class="proof" id="preuve">
+      <div class="section-head">
+        <p class="eyebrow">En photo</p>
+        <h2 class="h2">Deux reproductions<br><em>au mur.</em></h2>
+        <p class="lead">Deux reproductions Champollion encadrées, photographiées sur place. Le cadre doré reflète la lumière, la toile non.</p>
+      </div>
+      <div class="proof__grid">
+        <figure class="proof__item">
+          <div class="proof__img"><img loading="lazy" src="image/photo-degas-avant-la-course.jpg" width="1800" height="1350" alt="Reproduction Champollion d'Avant la course d'Edgar Degas, en caisse américaine dorée, accrochée sur un mur blanc"></div>
+          <figcaption><span>Edgar Degas</span><em>Avant la course</em>, v. 1887–1889 · Reproduction sur feutre</figcaption>
+        </figure>
+        <figure class="proof__item">
+          <div class="proof__img"><img loading="lazy" src="image/photo-van-gogh-iris.jpg" width="1800" height="1366" alt="Reproduction Champollion des Iris de Vincent van Gogh, en caisse américaine dorée, accrochée sur un mur blanc"></div>
+          <figcaption><span>Vincent van Gogh</span><em>Les Iris</em>, 1889 · Reproduction sur feutre</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- PROCÉDÉ -->
     <section class="process dark" id="procede">
       <div class="section-head">
         <p class="eyebrow">Le procédé</p>
-        <h2 class="h2">Des années de recherche.<br><em>Un brevet. Une matière.</em></h2>
+        <h2 class="h2">Comment c'est<br><em>fabriqué.</em></h2>
       </div>
       <div class="process__grid">
         <figure class="process__visual">
           <img src="https://www.champollion.art/wp-content/uploads/2023/07/IMG_0119.jpg" alt="Reproduction Champollion présentée sur chevalet en showroom">
-          <figcaption>Jacques Bodin, <em>Repaire de Bacchus</em> — reproduction sur feutre, présentée sans vitre.</figcaption>
+          <figcaption>Jacques Bodin, <em>Repaire de Bacchus</em>. Reproduction sur feutre, présentée sans vitre.</figcaption>
         </figure>
         <ol class="process__steps">
           <li>
             <span class="step__n">01</span>
             <h3>Numérisation</h3>
-            <p>L'original est capturé en très haute définition, pour restituer chaque glacis, chaque trait de pinceau, chaque grain.</p>
+            <p>L'original est numérisé en très haute définition. Les coups de pinceau et le grain de la toile restent visibles.</p>
           </li>
           <li>
             <span class="step__n">02</span>
             <h3>Le feutre</h3>
-            <p>Un feutre aux qualités exclusives : une matité remarquable et une absence totale de reflets, pour une immersion totale dans le sujet.</p>
+            <p>L'image est imprimée sur un feutre très mat, qui ne fait aucun reflet.</p>
           </li>
           <li>
             <span class="step__n">03</span>
             <h3>L'impression</h3>
-            <p>Un système innovant de reprographie numérique, fruit de plusieurs années de recherche de la société Actimage et d'un dépôt de brevet.</p>
+            <p>Le procédé d'impression a été mis au point par la société Actimage, après plusieurs années de recherche. Il est breveté.</p>
           </li>
           <li>
             <span class="step__n">04</span>
             <h3>L'édition</h3>
-            <p>Chaque œuvre est tirée en série limitée, numérotée, encadrée et livrée prête à accrocher.</p>
+            <p>Chaque œuvre est tirée en série limitée et numérotée, puis encadrée. Elle arrive prête à accrocher.</p>
           </li>
         </ol>
       </div>
@@ -143,9 +162,9 @@
       <div class="apps">
         <p class="eyebrow">Applications</p>
         <div class="apps__grid">
-          <div><h3>Tirages d'art photographiques</h3><p>D'un niveau exceptionnel, pour les photographes et leurs collectionneurs.</p></div>
-          <div><h3>Reproduction de tableaux</h3><p>Pour les plus grands artistes, en séries limitées et numérotées.</p></div>
-          <div><h3>Communication d'entreprise</h3><p>En événementiel ou sur les lieux de vente : des images à l'impact pictural.</p></div>
+          <div><h3>Tirages photographiques</h3><p>Pour les photographes et leurs collectionneurs.</p></div>
+          <div><h3>Reproduction de tableaux</h3><p>En séries limitées et numérotées, en accord avec les artistes.</p></div>
+          <div><h3>Communication d'entreprise</h3><p>Pour les salons, les événements et les points de vente.</p></div>
         </div>
       </div>
     </section>
@@ -155,12 +174,13 @@
       <div class="section-head section-head--row">
         <div>
           <p class="eyebrow">La collection</p>
-          <h2 class="h2">Peinture, photographie.<br><em>Une même présence.</em></h2>
+          <h2 class="h2">Peintures<br><em>et photographies.</em></h2>
         </div>
-        <div class="filters" role="tablist" aria-label="Filtrer la collection">
-          <button class="filter is-active" data-filter="all">Tout</button>
-          <button class="filter" data-filter="peinture">Peinture</button>
-          <button class="filter" data-filter="photo">Photographie</button>
+        <div class="filters" role="group" aria-label="Filtrer la collection">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">Tout</button>
+          <button class="filter" data-filter="maitres" aria-pressed="false">Grands maîtres</button>
+          <button class="filter" data-filter="peinture" aria-pressed="false">Contemporains</button>
+          <button class="filter" data-filter="photo" aria-pressed="false">Photographie</button>
         </div>
       </div>
 
@@ -169,9 +189,25 @@
           <div class="work__img"><img loading="lazy" src="https://www.champollion.art/wp-content/uploads/2023/07/Jacques-Bodin-Fruits-XVII-oil-on-canvas-2016-100x100-cm.jpg" alt="Jacques Bodin, Fruits"></div>
           <h3>Jacques Bodin</h3><p><em>Fruits XI</em> · Huile sur toile · 100 × 100 cm</p><span class="work__ed">Édition 1/27</span>
         </article>
+        <article class="work work--wide" data-cat="maitres">
+          <div class="work__img"><img loading="lazy" src="image/van-gogh-iris.jpg" alt="Vincent van Gogh, Les Iris"></div>
+          <h3>Vincent van Gogh</h3><p><em>Les Iris</em>, 1889 · Huile sur toile</p>
+        </article>
+        <article class="work" data-cat="maitres">
+          <div class="work__img"><img loading="lazy" src="image/degas-avant-la-course.jpg" alt="Edgar Degas, Avant la course"></div>
+          <h3>Edgar Degas</h3><p><em>Avant la course</em>, v. 1887–1889</p>
+        </article>
         <article class="work work--wide" data-cat="peinture">
           <div class="work__img"><img loading="lazy" src="https://www.champollion.art/wp-content/uploads/2023/07/eberle_2022_barber_51x120_g.jpg" alt="Christoph Eberle, Barber"></div>
           <h3>Christoph Eberle</h3><p><em>Barber</em>, 2022 · Huile sur toile · 51 × 120 cm</p>
+        </article>
+        <article class="work work--portrait" data-cat="maitres">
+          <div class="work__img"><img loading="lazy" src="image/monet-pont-japonais.jpg" alt="Claude Monet, Le Bassin aux nymphéas, pont japonais"></div>
+          <h3>Claude Monet</h3><p><em>Le Bassin aux nymphéas</em>, 1899 · Huile sur toile</p>
+        </article>
+        <article class="work" data-cat="maitres">
+          <div class="work__img"><img loading="lazy" src="image/hammershoi-interieur-strandgade.jpg" alt="Vilhelm Hammershøi, Intérieur, Strandgade, soleil sur le plancher"></div>
+          <h3>Vilhelm Hammershøi</h3><p><em>Intérieur, Strandgade</em>, 1901 · Huile sur toile</p>
         </article>
         <article class="work" data-cat="photo">
           <div class="work__img"><img loading="lazy" src="https://www.champollion.art/wp-content/uploads/2023/07/Sebastien-Carles-Opera-Garnier1-.jpg" alt="Sébastien Carles, Opéra Garnier"></div>
@@ -201,9 +237,17 @@
           <div class="work__img"><img loading="lazy" src="https://www.champollion.art/wp-content/uploads/2023/07/Jacques-Bodin-The-Rebirth-of-hyperrealism2022-oil-oncanvas100x100-cm.jpg" alt="Jacques Bodin, The Rebirth of (hyper)realism"></div>
           <h3>Jacques Bodin</h3><p><em>The Rebirth of (hyper)realism</em>, 2022 · Huile sur toile · 100 × 100 cm</p>
         </article>
-        <article class="work work--portrait" data-cat="peinture">
+        <article class="work work--portrait" data-cat="maitres">
           <div class="work__img"><img loading="lazy" src="https://www.champollion.art/wp-content/uploads/2023/07/Mona_Lisa_by_Leonardo_da_Vinci_from_C2RMF_retouched-BDEF.jpg" alt="Léonard de Vinci, La Joconde"></div>
           <h3>Léonard de Vinci</h3><p><em>La Joconde</em>, 1503–1506 · Huile sur bois · 53 × 77 cm</p>
+        </article>
+        <article class="work work--portrait" data-cat="maitres">
+          <div class="work__img"><img loading="lazy" src="image/vermeer-jeune-fille-perle.jpg" alt="Johannes Vermeer, La Jeune Fille à la perle"></div>
+          <h3>Johannes Vermeer</h3><p><em>La Jeune Fille à la perle</em>, v. 1665 · Huile sur toile</p>
+        </article>
+        <article class="work work--wide" data-cat="maitres">
+          <div class="work__img"><img loading="lazy" src="image/monet-nympheas.jpg" alt="Claude Monet, Nymphéas"></div>
+          <h3>Claude Monet</h3><p><em>Nymphéas</em>, 1916–1919 · Huile sur toile</p>
         </article>
         <article class="work" data-cat="peinture">
           <div class="work__img"><img loading="lazy" src="https://www.champollion.art/wp-content/uploads/2023/07/eberle_2020_tauben-80x100-1.jpg" alt="Christoph Eberle, Tauben"></div>
@@ -227,9 +271,9 @@
     <!-- ESPACES -->
     <section class="spaces" id="espaces">
       <div class="section-head">
-        <p class="eyebrow">Où vivent nos œuvres</p>
-        <h2 class="h2">Pensé pour les lieux<br><em>où la lumière ne se négocie pas.</em></h2>
-        <p class="lead">Halls baignés de soleil, suites éclairées en rasant, galeries sous spots : là où un tirage brillant devient miroir, Champollion reste tableau.</p>
+        <p class="eyebrow">Mises en situation</p>
+        <h2 class="h2">Pour les murs<br><em>en pleine lumière.</em></h2>
+        <p class="lead">Dans un hall au soleil, une chambre ou une galerie sous spots, un tirage brillant reflète la lumière. Une reproduction Champollion reste lisible.</p>
       </div>
 
       <div class="spaces__tabs" role="tablist" aria-label="Types d'espaces">
@@ -266,15 +310,15 @@
           </div>
         </figure>
       </div>
-      <p class="scenes__credit">Simulation d'accrochage — photographies d'intérieur Unsplash, à remplacer par des installations Champollion réelles.</p>
+      <p class="scenes__credit">Simulation d'accrochage. Photos d'intérieur Unsplash, à remplacer par de vraies installations Champollion.</p>
 
       <div class="spaces__info">
         <h3 id="spaceTitle">Hôtellerie</h3>
-        <p id="spaceText">Lobbies, couloirs, chambres et suites. Des œuvres signées, en séries limitées, qui tiennent sous toutes les lumières — et une identité artistique cohérente d'un étage à l'autre.</p>
+        <p id="spaceText">Halls, couloirs, chambres. Des séries limitées qui restent lisibles quel que soit l'éclairage, avec la même sélection d'un étage à l'autre.</p>
         <ul id="spaceList" class="spaces__list">
           <li>Grands formats sans vitre, plus légers</li>
-          <li>Séries coordonnées par établissement</li>
-          <li>Aucun reflet des baies vitrées</li>
+          <li>Une série coordonnée par établissement</li>
+          <li>Pas de reflet sous les spots</li>
         </ul>
       </div>
     </section>
@@ -282,8 +326,8 @@
     <!-- CITATION / DISTANCE -->
     <section class="quote dark">
       <figure>
-        <blockquote>« À gauche, un amateur d'art heureux. À droite, une vingtaine. »</blockquote>
-        <p class="quote__sub">Champollion<sup>®</sup> aurait-il vocation à rendre les gens heureux en démocratisant l'accession à l'Art photographique et pictural ? On est en droit de le penser.</p>
+        <blockquote>« Un tableau original a un seul propriétaire. Une édition Champollion peut en avoir une vingtaine. »</blockquote>
+        <p class="quote__sub">Le procédé permet à plus de monde d'accrocher chez soi une peinture ou une photographie d'art.</p>
         <figcaption>Le principe Champollion</figcaption>
       </figure>
     </section>
@@ -293,8 +337,8 @@
       <div class="contact__grid">
         <div>
           <p class="eyebrow">Projets &amp; présentations</p>
-          <h2 class="h2">Voir, c'est croire.<br><em>Venez le constater.</em></h2>
-          <p class="lead">Architectes, décorateurs, hôteliers : nous vous présentons les œuvres in situ et étudions avec vous les formats, les séries et l'accrochage.</p>
+          <h2 class="h2">Voir les œuvres<br><em>en vrai.</em></h2>
+          <p class="lead">Architectes, décorateurs, hôteliers : nous vous présentons les œuvres sur place et nous choisissons avec vous les formats, les séries et l'accrochage.</p>
         </div>
         <div class="contact__card">
           <p class="contact__name">David Genevier</p>
