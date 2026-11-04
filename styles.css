@@ -263,13 +263,13 @@ em { font-style: italic; }
 .light__pool {
   position: absolute; inset: 0; pointer-events: none;
   /* le faisceau éclaircit les couleurs, sans jamais monter jusqu'au blanc */
-  background: radial-gradient(circle at var(--x) var(--y), rgba(255,224,182,.55) 0%, rgba(255,224,182,.28) 18%, rgba(255,224,182,0) 42%);
+  background: radial-gradient(circle at var(--x) var(--y), rgba(255,226,188,.28) 0%, rgba(255,226,188,.12) 20%, rgba(255,226,188,0) 42%);
   mix-blend-mode: screen;
 }
 /* hors du faisceau, l'œuvre est dans la pénombre */
 .compare__layer::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: radial-gradient(circle at var(--x) var(--y), rgba(0,0,0,0) 18%, rgba(0,0,0,.55) 70%);
+  background: radial-gradient(circle at var(--x) var(--y), rgba(0,0,0,0) 30%, rgba(0,0,0,.18) 85%);
   mix-blend-mode: multiply;
 }
 .compare__layer--gloss img { filter: contrast(.92) saturate(.92); }
