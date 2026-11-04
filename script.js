@@ -90,7 +90,6 @@ lightWords();
 const stage = document.getElementById('compare');
 const gloss = document.getElementById('compareGloss');
 const handle = document.getElementById('compareHandle');
-const spot = document.getElementById('glossSpot');
 let split = 50;
 let dragging = false;
 let hovering = false;
@@ -109,8 +108,8 @@ const pctFromEvent = e => {
 
 const moveLight = e => {
   const r = stage.getBoundingClientRect();
-  spot.style.setProperty('--x', ((e.clientX - r.left) / r.width) * 100 + '%');
-  spot.style.setProperty('--y', ((e.clientY - r.top) / r.height) * 100 + '%');
+  stage.style.setProperty('--x', ((e.clientX - r.left) / r.width) * 100 + '%');
+  stage.style.setProperty('--y', ((e.clientY - r.top) / r.height) * 100 + '%');
 };
 
 handle.addEventListener('pointerdown', e => {
@@ -134,8 +133,8 @@ let t = 0;
 const drift = () => {
   if (!hovering) {
     t += 0.006;
-    spot.style.setProperty('--x', 25 + Math.sin(t) * 18 + '%');
-    spot.style.setProperty('--y', 32 + Math.cos(t * 0.8) * 16 + '%');
+    stage.style.setProperty('--x', 50 + Math.sin(t) * 30 + '%');
+    stage.style.setProperty('--y', 40 + Math.cos(t * 0.8) * 18 + '%');
   }
   requestAnimationFrame(drift);
 };
