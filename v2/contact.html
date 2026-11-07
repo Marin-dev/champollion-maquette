@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Champollion · Contact</title>
+  <meta name="description" content="Licence, commande, distribution ou recherche : contactez Champollion pour collaborer autour du procédé breveté.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav is-solid" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Champollion<sup>®</sup></a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="index.html#technologie">Technologie</a>
+        <a href="index.html#applications">Applications</a>
+        <a href="index.html#realisations">Réalisations</a>
+        <a href="index.html#partenariats">Partenariats</a>
+        <a href="contact.html" class="nav__cta" aria-current="page">Nous contacter</a>
+      </nav>
+      <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="cpage-hero">
+      <p class="kicker">Contact</p>
+      <h1 class="h2">Travaillons ensemble.</h1>
+      <p class="lead">Dites-nous qui vous êtes et ce que vous cherchez. David vous répond sous quelques jours.</p>
+    </section>
+
+    <section class="cpage">
+      <div class="cpage__grid">
+        <form class="cform" id="contactForm" novalidate>
+          <fieldset class="cform__group">
+            <legend>Votre demande</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="type" value="licence"><span>Licence</span></label>
+              <label class="chip"><input type="radio" name="type" value="commande" checked><span>Commande</span></label>
+              <label class="chip"><input type="radio" name="type" value="distribution"><span>Distribution</span></label>
+              <label class="chip"><input type="radio" name="type" value="recherche"><span>Recherche</span></label>
+              <label class="chip"><input type="radio" name="type" value="book"><span>Recevoir le book</span></label>
+              <label class="chip"><input type="radio" name="type" value="autre"><span>Autre</span></label>
+            </div>
+          </fieldset>
+
+          <div class="cform__field">
+            <label for="profil">Vous êtes</label>
+            <select id="profil" name="profil">
+              <option>Imprimeur ou laboratoire d'art</option>
+              <option>Galerie, éditeur ou curateur</option>
+              <option>Scénographe ou agence</option>
+              <option>Distributeur ou revendeur</option>
+              <option>Industriel ou designer</option>
+              <option>Artiste ou photographe</option>
+              <option>Architecte, hôtel ou entreprise</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="cform__row">
+            <div class="cform__field">
+              <label for="nom">Nom et prénom <span aria-hidden="true">*</span></label>
+              <input id="nom" name="nom" type="text" autocomplete="name" required aria-describedby="nomErr">
+              <span class="cform__err" id="nomErr">Indiquez votre nom.</span>
+            </div>
+            <div class="cform__field">
+              <label for="societe">Société</label>
+              <input id="societe" name="societe" type="text" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="cform__row">
+            <div class="cform__field">
+              <label for="email">E-mail <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="emailErr">
+              <span class="cform__err" id="emailErr">Indiquez une adresse e-mail valide.</span>
+            </div>
+            <div class="cform__field">
+              <label for="tel">Téléphone</label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="cform__field">
+            <label for="message">Votre projet <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required aria-describedby="messageErr" placeholder="Votre activité, ce que vous aimeriez faire avec le procédé, vos volumes ou vos délais…"></textarea>
+            <span class="cform__err" id="messageErr">Écrivez quelques mots sur votre projet.</span>
+          </div>
+
+          <label class="cform__consent">
+            <input type="checkbox" name="consent" required aria-describedby="consentErr">
+            <span>J'accepte que ces informations servent uniquement à répondre à ma demande.</span>
+          </label>
+          <span class="cform__err cform__err--consent" id="consentErr">Cochez cette case pour envoyer votre demande.</span>
+
+          <div class="cform__submit">
+            <button type="submit" class="btn btn--primary">Envoyer</button>
+            <p class="cform__hint">* Champs obligatoires</p>
+          </div>
+
+          <div class="cform__done" id="formDone" role="status" tabindex="-1" hidden>
+            <p class="kicker">Merci</p>
+            <h2>Votre message est prêt.</h2>
+            <p>Votre messagerie s'est ouverte avec le message déjà rempli. Sinon, écrivez à <a href="mailto:contact@champollion.art">contact@champollion.art</a>.</p>
+          </div>
+        </form>
+
+        <aside class="cside">
+          <div class="contact__card">
+            <p class="contact__name">David Genevier</p>
+            <p class="contact__role">Inventeur du procédé Champollion<sup>®</sup></p>
+            <a class="contact__line" href="mailto:contact@champollion.art">contact@champollion.art</a>
+            <a class="contact__line" href="tel:+33614694677">+33 6 14 69 46 77</a>
+            <address>Actimage · 3 rue des Entrepreneurs, ZI la Touche<br>44290 Guémené-Penfao, France</address>
+          </div>
+
+          <div class="cside__steps">
+            <p class="kicker">Ensuite</p>
+            <ol>
+              <li><span class="step__n">01</span><div><h3>Un premier échange</h3><p>Nous parlons de votre activité et de ce que vous voulez faire.</p></div></li>
+              <li><span class="step__n">02</span><div><h3>Des échantillons</h3><p>Vous recevez le book pour juger le rendu en main.</p></div></li>
+              <li><span class="step__n">03</span><div><h3>Un test</h3><p>Nous imprimons vos images ou testons votre application.</p></div></li>
+              <li><span class="step__n">04</span><div><h3>Le cadre</h3><p>Commande, licence ou distribution : nous fixons ensemble les modalités.</p></div></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="nav__logo">Champollion<sup>®</sup></span>
+      <span>Procédé d'impression breveté · Actimage, France</span>
+      <span>© 2026 Champollion</span>
+    </div>
+  </footer>
+
+  <div class="mockup-badge">Maquette V2 · Proposition · Site non officiel</div>
+
+  <script src="contact.js"></script>
+</body>
+</html>

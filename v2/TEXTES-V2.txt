@@ -1,0 +1,340 @@
+CHAMPOLLION · MAQUETTE V2 · TOUS LES TEXTES DU SITE
+====================================================
+
+Comment utiliser ce fichier
+---------------------------
+Chaque texte du site porte un repère (ex. [A-02]).
+Sous chaque texte, une ligne « Modification : » est laissée vide.
+- Pour garder le texte tel quel : ne rien écrire.
+- Pour le changer : écrire la nouvelle version après « Modification : ».
+- Pour le supprimer : écrire « SUPPRIMER ».
+Les mentions [À COMPLÉTER] ou [À VALIDER] signalent une information que seul David peut confirmer.
+
+Adresse de la maquette : https://marin-dev.github.io/champollion-maquette/v2/
+
+
+----------------------------------------------------
+QUESTIONS POUR DAVID (à remplir en priorité)
+----------------------------------------------------
+[Q-01] Numéro du brevet, date et pays de dépôt (FR, européen, international ?) :
+Réponse :
+
+[Q-02] Comment décrire le support ? Le site dit « feutre technique ». Faut-il parler de « complexe feutre et bristol » ?
+Réponse :
+
+[Q-03] Peut-on parler de « sublimation » pour l'impression, ou faut-il garder le procédé secret ?
+Réponse :
+
+[Q-04] Formats possibles : taille minimale et maximale ?
+Réponse :
+
+[Q-05] Tenue dans le temps (résistance à la lumière, durée de vie) : avez-vous des chiffres ou des tests ?
+Réponse :
+
+[Q-06] Quels types de collaboration voulez-vous vraiment proposer ? (licence, commande, distribution, recherche… en retirer ou en ajouter)
+Réponse :
+
+[Q-07] Le book : que contient-il exactement ? (nombre d'échantillons, fiche technique, carte de visite…) Existe-t-il déjà ?
+Réponse :
+
+[Q-08] Projets réalisés à ajouter (expositions, clients, artistes) avec photos : par exemple l'exposition au Comœdia à Brest, les tirages pour Jean-Denis Walter, les mains de Nadal, le cheval de Bruno Charoy ? Ces projets peuvent-ils être cités ?
+Réponse :
+
+[Q-09] Des citations de galeristes, photographes ou clients que l'on pourrait afficher (avec nom et autorisation) ?
+Réponse :
+
+[Q-10] Titre de David sur le site : « Inventeur du procédé » vous convient-il ? (autres options : fondateur, dirigeant d'Actimage…)
+Réponse :
+
+
+====================================================
+PAGE D'ACCUEIL
+====================================================
+
+--- Navigation ---------------------------------------
+[N-01] Champollion®
+Modification :
+
+[N-02] Technologie · Applications · Réalisations · Partenariats
+Modification :
+
+[N-03] Bouton : Nous contacter
+Modification :
+
+
+--- A. Ouverture (haut de page) ----------------------
+[A-01] Petit titre : Champollion® · Procédé breveté
+Modification :
+
+[A-02] Titre : Zéro reflet.
+Modification :
+
+[A-03] Texte : Une technologie d'impression sur feutre, mise au point par Actimage. L'image reste lisible sous n'importe quelle lumière. Nous cherchons des partenaires pour la développer.
+Modification :
+
+[A-04] Bouton : Devenir partenaire
+Modification :
+
+[A-05] Lien : Voir la technologie
+Modification :
+
+[A-06] Photo : reproduction des Iris de Van Gogh, encadrée, au mur.
+Modification :
+
+
+--- B. Bandeau du brevet -----------------------------
+[B-01] Brevet : n° [À COMPLÉTER]
+Modification :
+
+[B-02] Conçu par : Actimage, France
+Modification :
+
+[B-03] Reflet : 0 %, quel que soit l'angle
+Modification :
+
+[B-04] Statut : Ouvert à la licence
+Modification :
+
+
+--- C. Technologie (comparateur) ---------------------
+[C-01] Petit titre : Technologie
+Modification :
+
+[C-02] Titre : Brillant. Ou Champollion.
+Modification :
+
+[C-03] Texte : Une surface brillante renvoie la lumière : la fenêtre, la lampe, le spot. Le feutre Champollion l'absorbe. Faites glisser pour comparer.
+Modification :
+
+[C-04] Étiquettes de l'image : Tirage brillant / Champollion®
+Modification :
+
+[C-05] Note : Simulation à l'écran. Le rendu réel se voit sur échantillon : demandez le book.
+Modification :
+
+
+--- D. Spécifications --------------------------------
+[D-01] Petit titre : Spécifications
+Modification :
+
+[D-02] Titre : Ce que fait le procédé.
+Modification :
+
+[D-03] 0 % · Reflet · Aucune réflexion, même sous un spot ou face à une fenêtre.
+Modification :
+
+[D-04] Mat · Finition · Sans vitre ni vernis. Le grain et les coups de pinceau restent visibles.
+Modification :
+
+[D-05] Feutre · Support · Un feutre technique, au toucher proche d'un papier d'art. [À VALIDER, voir Q-02]
+Modification :
+
+[D-06] Libre · Formats · Du petit format au tirage monumental. [À VALIDER, voir Q-04]
+Modification :
+
+[D-07] 2 · Montages · Souple, comme une lithographie, ou monté sur un support rigide. [À VALIDER]
+Modification :
+
+[D-08] HD · Fidélité · Numérisation et impression en très haute définition.
+Modification :
+
+
+--- E. Le procédé ------------------------------------
+[E-01] Petit titre : Le procédé
+Modification :
+
+[E-02] Titre : Trois étapes. Une seule est brevetée.
+Modification :
+
+[E-03] 01 · Numérisation · L'image, photo ou tableau, est numérisée en très haute définition.
+Modification :
+
+[E-04] 02 · Impression sur feutre · Le cœur du brevet. Après plusieurs années de recherche, Actimage a mis au point une impression sur feutre qui ne renvoie pas la lumière. (pastille « Breveté »)
+Modification :
+
+[E-05] 03 · Finition · Le tirage est livré souple ou monté, encadré ou non, prêt à accrocher.
+Modification :
+
+
+--- F. Applications ----------------------------------
+[F-01] Petit titre : Applications
+Modification :
+
+[F-02] Titre : Partout où la lumière gêne.
+Modification :
+
+[F-03] Texte : Le procédé s'utilise déjà dans plusieurs domaines. D'autres restent à explorer.
+Modification :
+
+[F-04] Tirage d'art et photographie · Pour les photographes, les laboratoires et leurs collectionneurs.
+Modification :
+
+[F-05] Reproduction de tableaux · Séries limitées et numérotées, en accord avec les artistes.
+Modification :
+
+[F-06] Expositions et scénographie · Des images lisibles sous des projecteurs puissants.
+Modification :
+
+[F-07] Hôtellerie et architecture · Grands formats sans vitre, pour les halls, chambres et bureaux.
+Modification :
+
+[F-08] Carte ouverte : Votre application. · Signalétique, packaging, décor, textile ? Le procédé n'a pas encore livré tous ses usages. Proposez une idée, nous la testons avec vous.
+Modification :
+
+[F-09] Lien : Proposer une piste
+Modification :
+
+
+--- G. Réalisations ----------------------------------
+[G-01] Petit titre : Réalisations
+Modification :
+
+[G-02] Titre : Exemples de projets réalisés.
+Modification :
+
+[G-03] Projet 1 · Reproduction · Grands maîtres
+Titre : Degas et Van Gogh, sans vitre.
+Texte : Deux reproductions encadrées en caisse américaine, photographiées au mur, sans retouche. Pas un reflet, malgré la lumière du jour.
+Modification :
+
+[G-04] Projet 2 · Édition d'artiste
+Titre : Jacques Bodin
+Texte : Huiles hyperréalistes éditées en séries numérotées, validées par l'artiste.
+Modification :
+
+[G-05] Projet 3 · Tirage photographique
+Titre : Sébastien Carles
+Texte : Tirages grand format, 80 × 120 cm, pour une série sur la Loire et l'Opéra Garnier.
+Modification :
+
+[G-06] Projets à ajouter (voir Q-08) :
+Modification :
+
+
+--- H. Partenariats ----------------------------------
+[H-01] Petit titre : Partenariats
+Modification :
+
+[H-02] Titre : Le procédé est ouvert.
+Modification :
+
+[H-03] Texte : Champollion® s'associe aux imprimeurs, laboratoires d'art, galeries, éditeurs et distributeurs. Commande ponctuelle ou collaboration durable : choisissez votre point d'entrée.
+Modification :
+
+[H-04] Licence · Imprimeurs et laboratoires d'art · Intégrez le procédé à votre offre, avec la licence et les consommables. · Lien : En savoir plus
+Modification :
+
+[H-05] Commande · Galeries, éditeurs, scénographes · Confiez-nous une série limitée, une exposition ou un tirage monumental. · Lien : Lancer un projet
+Modification :
+
+[H-06] Distribution · Distributeurs et revendeurs · Proposez Champollion® à vos clients, avec le book et les échantillons. · Lien : Devenir distributeur
+Modification :
+
+[H-07] Recherche · Industriels et designers · Testez de nouveaux supports et de nouveaux usages avec nous. · Lien : Explorer ensemble
+Modification :
+
+
+--- I. Le book ---------------------------------------
+[I-01] Petit titre : Le book
+Modification :
+
+[I-02] Titre : À toucher, pas à lire.
+Modification :
+
+[I-03] Texte : Le mat se juge en main. Le book réunit des échantillons du procédé et une fiche technique. Pour vos rendez-vous clients, ou pour vous faire une idée. [À VALIDER, voir Q-07]
+Modification :
+
+[I-04] Bouton : Demander le book
+Modification :
+
+[I-05] Couverture du book (visuel) : Champollion® · Procédé breveté · Échantillons
+Modification :
+
+
+--- J. Contact (bas de page) -------------------------
+[J-01] Petit titre : Contact
+Modification :
+
+[J-02] Titre : Parlons de votre projet.
+Modification :
+
+[J-03] Texte : Une idée, une commande, une question sur la licence ? David vous répond directement.
+Modification :
+
+[J-04] David Genevier · Inventeur du procédé Champollion® [À VALIDER, voir Q-10]
+contact@champollion.art · +33 6 14 69 46 77
+Actimage · 3 rue des Entrepreneurs, ZI la Touche · 44290 Guémené-Penfao, France
+Modification :
+
+[J-05] Bouton : Écrire à David
+Modification :
+
+
+--- K. Pied de page ----------------------------------
+[K-01] Champollion® · Procédé d'impression breveté · Actimage, France · © 2026 Champollion
+Modification :
+
+
+====================================================
+PAGE CONTACT
+====================================================
+
+[P-01] Petit titre : Contact
+Modification :
+
+[P-02] Titre : Travaillons ensemble.
+Modification :
+
+[P-03] Texte : Dites-nous qui vous êtes et ce que vous cherchez. David vous répond sous quelques jours.
+Modification :
+
+--- Formulaire ---
+[P-04] Votre demande (choix) : Licence · Commande · Distribution · Recherche · Recevoir le book · Autre
+Modification :
+
+[P-05] Vous êtes (liste) : Imprimeur ou laboratoire d'art · Galerie, éditeur ou curateur · Scénographe ou agence · Distributeur ou revendeur · Industriel ou designer · Artiste ou photographe · Architecte, hôtel ou entreprise · Autre
+Modification :
+
+[P-06] Champs : Nom et prénom * · Société · E-mail * · Téléphone · Votre projet *
+Modification :
+
+[P-07] Aide du champ « Votre projet » : Votre activité, ce que vous aimeriez faire avec le procédé, vos volumes ou vos délais…
+Modification :
+
+[P-08] Case à cocher : J'accepte que ces informations servent uniquement à répondre à ma demande.
+Modification :
+
+[P-09] Bouton : Envoyer · * Champs obligatoires
+Modification :
+
+[P-10] Message après envoi : Merci · Votre message est prêt. · Votre messagerie s'est ouverte avec le message déjà rempli. Sinon, écrivez à contact@champollion.art.
+Modification :
+
+[P-11] Messages d'erreur : Indiquez votre nom. · Indiquez une adresse e-mail valide. · Écrivez quelques mots sur votre projet. · Cochez cette case pour envoyer votre demande.
+Modification :
+
+--- Colonne de droite ---
+[P-12] Petit titre : Ensuite
+Modification :
+
+[P-13] 01 · Un premier échange · Nous parlons de votre activité et de ce que vous voulez faire.
+Modification :
+
+[P-14] 02 · Des échantillons · Vous recevez le book pour juger le rendu en main.
+Modification :
+
+[P-15] 03 · Un test · Nous imprimons vos images ou testons votre application.
+Modification :
+
+[P-16] 04 · Le cadre · Commande, licence ou distribution : nous fixons ensemble les modalités.
+Modification :
+
+
+====================================================
+TEXTES INVISIBLES (référencement)
+====================================================
+[S-01] Titre de l'onglet : Champollion · Procédé breveté
+Modification :
+
+[S-02] Description pour Google : Champollion® est un procédé d'impression breveté sur feutre, sans aucun reflet. Ouvert aux partenariats : licence, commandes, distribution et recherche.
+Modification :
