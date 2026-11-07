@@ -57,23 +57,6 @@ burger.addEventListener('click', () => setMenu(!nav.classList.contains('is-open'
 nav.querySelectorAll('.nav__links a').forEach(a => a.addEventListener('click', () => setMenu(false)));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 
-// ---------- Défilement : barre de navigation et image du hero ----------
-const heroMedia = document.getElementById('heroMedia');
-let queued = false;
-const onScroll = () => {
-  queued = false;
-  nav.classList.toggle('is-solid', scrollY > 8);
-  if (!heroMedia || reducedMotion.matches) return;
-  // L'image s'élargit légèrement en arrivant au centre de l'écran, comme une page produit
-  const r = heroMedia.getBoundingClientRect();
-  const p = clamp(1 - (r.top - innerHeight * 0.15) / (innerHeight * 0.7), 0, 1);
-  heroMedia.style.transform = `scale(${0.9 + p * 0.1})`;
-};
-const queue = () => { if (!queued) { queued = true; requestAnimationFrame(onScroll); } };
-addEventListener('scroll', queue, { passive: true });
-addEventListener('resize', queue);
-onScroll();
-
 // ---------- Comparateur ----------
 const stage = document.getElementById('compare');
 if (stage) {
@@ -163,8 +146,67 @@ if (stage) {
   }).observe(stage);
 }
 
+// ---------- En situation : onglets ----------
+const spaces = {
+  hotel: {
+    title: 'Hôtellerie',
+    text: "Halls, couloirs, chambres. Des séries qui restent lisibles quel que soit l'éclairage, avec la même sélection d'un étage à l'autre.",
+    list: ['Grands formats sans vitre, plus légers', 'Une série coordonnée par établissement', 'Pas de reflet sous les spots']
+  },
+  archi: {
+    title: "Maisons d'architecte",
+    text: "Murs nus, baies vitrées, lumière naturelle. L'œuvre se regarde comme une peinture, sans le reflet des fenêtres.",
+    list: ['Formats sur mesure', 'Une surface mate qui va avec les matériaux bruts', "Sélection faite avec l'architecte"]
+  },
+  office: {
+    title: 'Sièges et bureaux',
+    text: "Salles de réunion, accueils, espaces de réception. Les images restent lisibles sous l'éclairage des bureaux.",
+    list: ['Lisible sous les néons et les spots', "Images choisies selon l'identité de l'entreprise", 'Tirages faciles à changer']
+  },
+  expo: {
+    title: 'Expositions et événements',
+    text: 'Salons, points de vente, scénographies. Les images restent lisibles sous des projecteurs puissants.',
+    list: ['Pas de reflet sous les projecteurs', 'Supports légers, faciles à transporter', 'Tirages grand format']
+  }
+};
+const scenes = document.querySelectorAll('.scene');
+const info = document.querySelector('.spaces__info');
+const tabs = [...document.querySelectorAll('.space-tab')];
+let swapTimer = 0;
+const selectSpace = tab => {
+  if (tab.classList.contains('is-active')) return;
+  const key = tab.dataset.space;
+  const s = spaces[key];
+  tabs.forEach(t => {
+    const on = t === tab;
+    t.classList.toggle('is-active', on);
+    t.setAttribute('aria-selected', on);
+    t.tabIndex = on ? 0 : -1;
+  });
+  scenes.forEach(sc => sc.classList.toggle('is-active', sc.dataset.space === key));
+  clearTimeout(swapTimer);
+  info.classList.add('is-swapping');
+  swapTimer = setTimeout(() => {
+    document.getElementById('spaceTitle').textContent = s.title;
+    document.getElementById('spaceText').textContent = s.text;
+    document.getElementById('spaceList').innerHTML = s.list.map(l => `<li>${l}</li>`).join('');
+    info.classList.remove('is-swapping');
+  }, reducedMotion.matches ? 0 : 200);
+};
+tabs.forEach((tab, i) => {
+  tab.tabIndex = tab.classList.contains('is-active') ? 0 : -1;
+  tab.addEventListener('click', () => selectSpace(tab));
+  tab.addEventListener('keydown', e => {
+    const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+    if (!d) return;
+    const next = tabs[(i + d + tabs.length) % tabs.length];
+    next.focus();
+    selectSpace(next);
+  });
+});
+
 // ---------- Apparitions au défilement ----------
-document.querySelectorAll('.head, .spec, .step, .app, .case, .partner, .book__visual, .book__text, .contact__card')
+document.querySelectorAll('.head, .compare, .steps, .tile, .scenes, .offer__body, .contact')
   .forEach(el => el.classList.add('reveal'));
 const io = new IntersectionObserver(entries => {
   entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });

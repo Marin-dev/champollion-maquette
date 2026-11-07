@@ -15,18 +15,6 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(fals
 const form = document.getElementById('contactForm');
 const done = document.getElementById('formDone');
 const TO = 'contact@champollion.art';
-const TYPES = {
-  licence: 'Licence du procédé',
-  commande: 'Commande ou projet',
-  distribution: 'Distribution',
-  recherche: 'Recherche et nouvelles applications',
-  book: 'Demande du book',
-  autre: 'Autre demande'
-};
-
-// Le type de demande arrive pré-sélectionné depuis les cartes de la page d'accueil (?type=licence…)
-const wanted = new URLSearchParams(location.search).get('type');
-if (wanted && TYPES[wanted]) form.querySelector(`input[name="type"][value="${wanted}"]`).checked = true;
 
 const check = el => {
   const isBox = el.type === 'checkbox';
@@ -51,7 +39,7 @@ form.addEventListener('submit', e => {
   const val = key => (d.get(key) || '').trim();
   const opt = (label, key) => val(key) ? [`${label} : ${val(key)}`] : [];
   const lines = [
-    `Demande : ${TYPES[val('type')]}`,
+    `Intérêt : ${val('interet')}`,
     `Profil : ${val('profil')}`,
     `Nom : ${val('nom')}`,
     ...opt('Société', 'societe'),
@@ -60,7 +48,7 @@ form.addEventListener('submit', e => {
     '',
     val('message')
   ];
-  const subject = `${TYPES[val('type')]} · ${val('nom')}`;
+  const subject = `Champollion · ${val('interet')} · ${val('nom')}`;
   location.href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
 
   form.classList.add('is-sent');
